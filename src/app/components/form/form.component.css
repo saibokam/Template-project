@@ -62,6 +62,8 @@ img {
   margin-bottom:30px;
   border:none;
   border-bottom:1px solid #fff;
+  border-left:1px solid #fff;
+
   outline: none;
   background: transparent;
 

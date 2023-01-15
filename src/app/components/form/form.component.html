@@ -4,21 +4,21 @@
 
 <div class="box">
   <h2>login register</h2>
-  <form>
+  <form #mf="ngForm">
 
 <div class="form-group inputbox">
 
-  <input type="text" class="form-control" required="">
+  <input type="text" class="form-control" required="" name="username" ngModel>
   <label>username:</label>
 </div>
     <div class="form-group inputbox">
 
-      <input type="password" class="form-control" required="">
+      <input type="password" class="form-control" required="" name="pass" ngModel>
       <label>password:</label>
     </div>
     <div class="form-group inputbox">
 
-      <input type="password" class="form-control" required="">
+      <input type="password" class="form-control" required="" name="cpass" ngModel>
       <label>confirm password:</label>
     </div>
 <input type="submit" name="submit" value="register">
@@ -26,3 +26,6 @@
 
 </div>
 </div>
+
+
+<div>{{mf.value|json}}</div>
